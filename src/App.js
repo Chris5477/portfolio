@@ -3,13 +3,13 @@ import PortfolioPage from "./page/PortfolioPage";
 import AboutPage from "./page/AboutPage";
 import ErrorPage from "./page/ErrorPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import TopNavigation from "./components/TopNavigation";
+import Layout from "./components/Layout";
 
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-      <TopNavigation />
+				<Layout />
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/portfolio" element={<PortfolioPage />} />
