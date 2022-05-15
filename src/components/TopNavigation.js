@@ -1,4 +1,4 @@
-import { AppBar, Avatar, Box, Container, Button } from "@mui/material";
+import { AppBar, Avatar, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import chris from "../assets/pictures/chrispng.png";
 import { theme } from "../utils/theme";
@@ -31,6 +31,7 @@ const TopNavigation = () => {
 	return (
 		<AppBar sx={styleAppBar}>
 			<Avatar alt="Christopher Petitcolas" src={chris} sx={{ width: 50, height: 50, ml: "25px" }} />
+			<Typography variant="h6"  sx={{ flexGrow: 1, ml: 7 }}>Petitcolas Christopher</Typography>
 			<Box sx={{ width: "30%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>
