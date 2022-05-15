@@ -22,7 +22,7 @@ const Layout = ({ page }) => {
 	console.log(theme);
 	return (
 		<ThemeProvider theme={theme}>
-			<Paper sx={{ width: "100%", height:"auto", backgroundColor:theme.palette.primary.main }}>
+			<Paper sx={{ width: "100%", height:"auto" }}>
 				<TopNavigation />
 				{page}
 			</Paper>

@@ -17,37 +17,37 @@ const CardProject = ({ title, description, picture, link, more }) => {
 				position: "relative",
 				borderRadius: "8px",
 				cursor: "pointer",
-				backgroundColor: theme.palette.primary.light,
+				backgroundColor: "primary.dark",
+				boxShadow: theme.shadows[22],
 			}}
-
-      
 		>
 			<CardMedia
 				component="img"
 				image={picture}
 				alt="project"
-				sx={{ objectFit: "contain", height: 140, backgroundColor: theme.palette.background.default }}
+				sx={{ objectFit: "contain", height: 140, backgroundColor: "#FFF" }}
 			/>
 			<Divider />
-			<CardContent sx={{ backgroundColor: theme.palette.primary.light }}>
+			<CardContent sx={{ backgroundColor: "primary.dark" }}>
 				<Typography
 					gutterBottom
 					variant="h5"
 					component="div"
+					pl={2}
 					sx={{ backgroundColor: "secondary.light" }}
+					color="primary.dark"
 					fontWeight={600}
-					color={"secondary"}
 				>
 					{title}
 				</Typography>
-				<Typography variant="h6" color="background.default">
+				<Typography variant="h6" color="secondary.light">
 					{description}
 				</Typography>
 				<CardActions sx={{ position: "absolute", bottom: 10 }}>
-					<Button color={"secondary"} variant="contained" size="small" href={link}>
+					<Button color={"secondary"} variant="outlined" size="small" href={link}>
 						Voir sur Github
 					</Button>
-					<Button color={"secondary"} variant="contained" size="small" href={more}>
+					<Button color={"secondary"} variant="outlined" size="small" href={more}>
 						En savoir plus
 					</Button>
 				</CardActions>

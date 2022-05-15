@@ -1,6 +1,7 @@
 import { AppBar, Avatar, Box, Container, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import Chris from "../assets/pictures/chris.jpg";
+import chris from "../assets/pictures/chrispng.png";
+import { theme } from "../utils/theme";
 
 const TopNavigation = () => {
 	const pages = [
@@ -12,20 +13,24 @@ const TopNavigation = () => {
 	const styleAppBar = {
 		width: "100%",
 		height: "70px",
-		backgroundColor: theme.palette.primary.light,
+		backgroundColor: "primary.dark",
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-between",
 		alignItems: "center",
 		fontSize: "1.6em",
 		"& :visited": {
-			color: theme.palette.secondary.light,
+			color: "primary.main",
+		},
+		"& :hover": {
+			color: "primary.light",
+			transition : "0.4s"
 		},
 	};
 
 	return (
 		<AppBar sx={styleAppBar}>
-			<Avatar alt="Christopher Petitcolas" src={Chris} sx={{ width: 56, height: 56, ml: "25px" }} />
+			<Avatar alt="Christopher Petitcolas" src={chris} sx={{ width: 50, height: 50, ml: "25px" }} />
 			<Box sx={{ width: "30%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>

@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Paper, Typography, Grid } from "@mui/material";
 import chrisPng from "../assets/pictures/chrispng.png";
 
 const styleImg = {
@@ -6,6 +6,8 @@ const styleImg = {
 	top: "50%",
 	left: "11%",
 	transform: "translateY(-50%)",
+	width : "400px",
+	height : "400px"
 };
 
 const HomePage = () => {
@@ -21,19 +23,19 @@ const HomePage = () => {
 		>
 			<img src={chrisPng} alt="christopher" style={styleImg} />
 
-			<Box>
-				<Typography color={"secondary.light"} variant="h4">
+			<Paper sx={{padding: "30px 10px"}}>
+				<Typography color={"primary"} variant="h4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</Typography>
 
-				<Typography color={"secondary"} width="100%" variant={"h3"}>
+				<Typography color={"primary"} width="100%" variant={"h3"}>
 					Lorem ipsum dolor sit.
 				</Typography>
 
-				<Typography color={"primary.light"} variant={"p"}>
+				<Typography color={"primary"} variant={"p"}>
 					Lorem ipsum dolor sit amet consectetur.
 				</Typography>
-			</Box>
+			</Paper>
 		</Grid>
 		
 	);
