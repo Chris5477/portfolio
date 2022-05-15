@@ -4,17 +4,17 @@ import AboutPage from "./page/AboutPage";
 import ErrorPage from "./page/ErrorPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import "./app.css";
 
 function App() {
+
 	return (
 		<div className="App">
-			<BrowserRouter>
-				<Layout />
+			<BrowserRouter >
 				<Routes>
-					<Route exact path="/" element={<HomePage />} />
-					<Route path="/portfolio" element={<PortfolioPage />} />
-					<Route path="/portfolio/project/:title" element={<PortfolioPage />} />
-					<Route path="/about" element={<AboutPage />} />
+					<Route exact path={"portfolio/"} element={<Layout page={<HomePage />} />} />
+					<Route path={"portfolio/myportfolio"}element={<Layout page={<PortfolioPage />} />} />
+					<Route path={"portfolio/about"} element={<Layout page={<AboutPage />} />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
