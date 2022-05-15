@@ -6,8 +6,8 @@ const ProjectsPage = () => {
 	return (
 		<Grid container width={"100%"} minHeight={"100vh"} height="auto" spacing={2}>
 			<Grid mt={10} ml={5} item xs={12}>
-				<Typography variant="h1" color={"secondary.light"} fontWeight={500} >Mon portfolio</Typography>
-				<Typography paragraph fontSize={25} color={"background.default"}>
+				<Typography variant="h2" color={"primary"} fontWeight={500} >Mon portfolio</Typography>
+				<Typography paragraph fontSize={25} color={"primary.light"}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio rem quia omnis, dolorum, reiciendis
 					ad expedita exercitationem laudantium, dignissimos vero laborum autem! Ducimus consequatur omnis a ex
 					doloribus vero.
@@ -23,6 +23,7 @@ const ProjectsPage = () => {
 					description={description}
 					link={github}
 					more={`/portfolio/project/${name}`}
+					
 				/>
 				</Grid>
 			))}
