@@ -4,19 +4,13 @@ import fileSaver from "file-saver";
 
 const HomePage = () => {
 	const styleImg = {
-		position: "absolute",
-		top: "50%",
-		left: "11%",
-		transform: "translateY(-50%)",
-		width: "400px",
-		height: "400px",
+		width: "60%",
+		height: "60%",
+		marginLeft : '20%'
 	};
 
 	const stylePaperHomePage = {
-		pt: 8,
-		pb: 5,
-		pl: 10,
-		pr: 10,
+		padding : '30px 50px',
 		border: "2px solid #1e87d1",
 		backgroundColor: "#FFF",
 		color: "primary.light",
@@ -32,34 +26,46 @@ const HomePage = () => {
 		<Grid
 			container
 			width={"90%"}
-			height={"100vh"}
-			direction={"column"}
-			justifyContent={"center"}
-			alignItems={"flex-end"}
+			minHeight={"100vh"}
+			height={"auto"}
+			display="flex"
+			justifyContent="center"
+			alignItems="center"
+			margin="auto"
+			
 		>
-			<img src={chrisPng} alt="christopher" style={styleImg} />
+			<Grid item xs={12} md={6}>
+				<img src={chrisPng} alt="christopher" style={styleImg} />
+			</Grid>
+			<Grid item xs={12} md={6}>
+				<Paper sx={stylePaperHomePage} >
+					<Typography color={"primary"} variant="h3">
+						Développeur Front-end <br />
+						(Javascript / React)
+					</Typography>
 
-			<Paper sx={stylePaperHomePage}>
-				<Typography color={"primary"} variant="h3">
-					Développeur Front-end <br />
-					(Javascript / React)
-				</Typography>
+					<Typography color={"primary"} width="100%" variant={"h4"} mb={5}>
+						Je suis un développeur Front-End spécialisé React. <br />
+						En apprentissage de Node.js.
+					</Typography>
 
-				<Typography color={"primary"} width="100%" variant={"h4"} mb={5}>
-					Je suis un développeur Front-End spécialisé React. <br />
-					En apprentissage de Node.js.
-				</Typography>
-
-				<Stack direction="row" spacing={3}>
-					<Button color={"primary"} variant={"contained"} href="/portfolio">
-						Mon Portfolio
-					</Button>
-					<Button color={"primary"} variant={"outlined"} onClick={saveFile}>
-						Télécharger mon CV
-					</Button>
-				</Stack>
-			</Paper>
-			{/* <Typography variant="h6">Cette page web est conçu avec React et MUI Component</Typography>	 */}
+					<Stack direction="row" spacing={3}>
+						<Button color={"primary"} variant={"contained"} href="/portfolio">
+							Mon Portfolio
+						</Button>
+						<Button color={"primary"} variant={"outlined"} onClick={saveFile}>
+							Télécharger mon CV
+						</Button>
+					</Stack>
+				</Paper>
+			</Grid>
+			{window.innerWidth > 600 &&  <Typography
+				color="primary"
+				sx={{ width :'100%', position: "absolute", bottom: "1%", textAlign:"center"}}
+				variant="h5"
+			>
+				Cette page web est conçu avec React et MUI Component
+			</Typography>}
 		</Grid>
 	);
 };

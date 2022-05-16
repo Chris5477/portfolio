@@ -9,7 +9,7 @@ import { knowledge } from "../utils/stacks";
 
 const AboutPage = () => {
 	const styleStack = {
-		width: "20%",
+		width : "20%",
 		position: "fixed",
 		right: "3%",
 		top: "13%",
@@ -35,15 +35,19 @@ const AboutPage = () => {
 	};
 
 	return (
-		<Box pt={15} pl={3}>
-			<Paper sx={{ width: "70%", height: "auto", p: 4, backgroundColor: "#FFF" }}>
-				<Typography mb={2} color={"primary"} fontWeight={400} variant="h2">À propos de moi</Typography>
-				
-				{presentation.map(({ id, title, description }) => (
-					<Accordeon key={id} title={title} description={description} />
-				))}
-			</Paper>
-			<Stack spacing={2} sx={styleStack}>
+		<Grid container pt={15} pl={3}>
+			<Grid item xs={12} md={9}>
+				<Paper sx={{ width: "80%", height: "auto", p: 4, backgroundColor: "#FFF" }}>
+					<Typography mb={2} color={"primary"} fontWeight={400} variant="h2">
+						À propos de moi
+					</Typography>
+
+					{presentation.map(({ id, title, description }) => (
+						<Accordeon key={id} title={title} description={description} />
+					))}
+				</Paper>
+			</Grid>
+			<Grid item xs={12} md={3} sx={window.innerWidth > 600 ? styleStack : {}}>
 				<Paper sx={stylePaper}>
 					<Typography
 						sx={{ mt: 2, mb: 2, pl: 2, placeSelf: "flex-start center", color: "primary.main" }}
@@ -82,8 +86,8 @@ const AboutPage = () => {
 						))}
 					</Grid>
 				</Paper>
-			</Stack>
-		</Box>
+			</Grid>
+		</Grid>
 	);
 };
 export default AboutPage;

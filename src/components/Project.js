@@ -20,7 +20,9 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 				<img width={"80%"} height={500} style={{ objectFit: "contain  " }} src={illustrations[index]} alt="project" />
 
 				<Pagination
+                    size="large"
 					sx={{
+                        display :"inline-flex",
 						position: "absolute",
 						left: "50%",
 						bottom: "2%",

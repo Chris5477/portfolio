@@ -30,11 +30,11 @@ const TopNavigation = () => {
 
 	return (
 		<AppBar sx={styleAppBar}>
-			<Avatar alt="Christopher Petitcolas" src={chris} sx={{ width: 50, height: 50, ml: "25px" }} />
-			<Typography variant="h6" sx={{ flexGrow: 1, ml: 7 }}>
+			<Avatar alt="Christopher Petitcolas" src={chris} sx={{ width: 50, height: 50, ml: "15px" }} />
+			<Typography variant="h6" sx={{ ml: 1 }} fontSize="2rem">
 				Petitcolas Christopher
 			</Typography>
-			<Box sx={{ width: "30%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+			<Box sx={{ width: "60%", height:"50%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>
 						{link}

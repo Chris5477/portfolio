@@ -17,7 +17,6 @@ const CardProject = ({ title, description, picture, link, more }) => {
 				minHeight: "400px",
 				position: "relative",
 				borderRadius: "8px",
-				cursor: "pointer",
 				backgroundColor: "primary.dark",
 				boxShadow: theme.shadows[22],
 			}}
