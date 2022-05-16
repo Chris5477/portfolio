@@ -1,9 +1,7 @@
-import { Typography, Paper, Button, Box, List, ListItem, ListItemText, Pagination, Stack } from "@mui/material";
+import { Typography, Paper, Button, List, ListItem, ListItemText, Pagination, Stack } from "@mui/material";
 import { useState } from "react";
 
 const Project = ({ id, title, illustrations, article, skillWorked, github }) => {
-	
-
 	const [index, setIndex] = useState(1);
 	return (
 		<Paper
@@ -20,9 +18,9 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 				<img width={"80%"} height={500} style={{ objectFit: "contain  " }} src={illustrations[index]} alt="project" />
 
 				<Pagination
-                    size="large"
+					size="large"
 					sx={{
-                        display :"inline-flex",
+						display: "inline-flex",
 						position: "absolute",
 						left: "50%",
 						bottom: "2%",

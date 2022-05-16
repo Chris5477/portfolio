@@ -1,4 +1,4 @@
-import { Box, Paper, Typography, Stack, Divider, Grid } from "@mui/material";
+import { Paper, Typography, Stack, Divider, Grid } from "@mui/material";
 import Accordeon from "../components/Accordeon";
 import SocialLink from "../components/SocialLink";
 import Technologies from "../components/Technologies";
@@ -9,7 +9,7 @@ import { knowledge } from "../utils/stacks";
 
 const AboutPage = () => {
 	const styleStack = {
-		width : "20%",
+		width: "20%",
 		position: "fixed",
 		right: "3%",
 		top: "13%",
