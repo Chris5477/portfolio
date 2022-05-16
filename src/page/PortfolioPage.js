@@ -4,7 +4,7 @@ import { projects } from "../utils/listProject";
 
 const ProjectsPage = () => {
 	return (
-		<Grid container width={"100%"} minHeight={"100vh"} height="auto" spacing={2}>
+		<Grid container width={"100%"} height="auto" spacing={2}>
 			<Grid mt={10} ml={5} item xs={12}>
 				<Typography variant="h2" color={"primary"} fontWeight={500} >Mon portfolio</Typography>
 				<Typography paragraph fontSize={25} color={"primary.light"}>
