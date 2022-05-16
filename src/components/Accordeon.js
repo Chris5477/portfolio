@@ -8,26 +8,27 @@ const Accordeon = ({ title, description }) => {
 	const styleAccordeon = {
 		backgroundColor: "#FFF",
 		color: "primary.main",
-		border: "1px solid primary",
+		border: "1px solid #1e87d1",
 	};
 
-	const styleContentAccordeon = {
-		backgroundColor: "background.paper",
-		color: " primary",
+	const styleAccordeonSummary = {
+		backgroundColor: "primary.main",
+		color: "#FFF",
+		
 	};
-
 	return (
 		<Accordion sx={styleAccordeon}>
 			<AccordionSummary
-				expandIcon={<ExpandMoreIcon color="primary" />}
+				sx={styleAccordeonSummary}
+				expandIcon={<ExpandMoreIcon sx={{color : "#FFF"}} />}
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 			>
-				<Typography>{title}</Typography>
+				<Typography fontWeight={1000} fontSize={20}>{title}</Typography>
 			</AccordionSummary>
 
-			<AccordionDetails sx={styleAccordeon}>
-				<Typography>
+			<AccordionDetails sx={{...styleAccordeon, padding : "15px" }}>
+				<Typography fontWeight={"bold"}>
 				{description}
 				</Typography>
 			</AccordionDetails>
