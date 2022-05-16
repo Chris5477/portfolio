@@ -6,7 +6,7 @@ import { theme } from "../utils/theme";
 const TopNavigation = () => {
 	const pages = [
 		{ id: 1, path: "/", link: "Home" },
-		{ id: 2, path: "/portfolio", link: "Portfolio" },
+		{ id: 2, path: "/myportfolio", link: "Portfolio" },
 		{ id: 3, path: "/about", link: "About" },
 	];
 
