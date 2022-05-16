@@ -8,7 +8,7 @@ const styleIcon = {
 
 const Technologies = ({icon }) => {
 	return (
-		<Grid item xs={12} md={3} justifyContent="center" alignItems="center">
+		<Grid item xs={3} justifyContent="center" alignItems="center">
 			<img style={styleIcon} src={icon} alt="technologie" />
 		</Grid>
 	);
