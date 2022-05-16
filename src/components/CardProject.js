@@ -13,6 +13,7 @@ const CardProject = ({ title, description, picture, link, more }) => {
 		<Card
 			sx={{
 				margin: 3,
+				width : "380px",
 				minHeight: "400px",
 				position: "relative",
 				borderRadius: "8px",
@@ -25,7 +26,7 @@ const CardProject = ({ title, description, picture, link, more }) => {
 				component="img"
 				image={picture}
 				alt="project"
-				sx={{ objectFit: "contain", height: 140, backgroundColor: "#FFF" }}
+				sx={{ objectFit: "contain", height: 100, backgroundColor: "#FFF" }}
 			/>
 			<Divider />
 			<CardContent sx={{ backgroundColor: "primary.dark" }}>
@@ -47,7 +48,7 @@ const CardProject = ({ title, description, picture, link, more }) => {
 					<Button color={"secondary"} variant="outlined" size="small" href={link}>
 						Voir sur Github
 					</Button>
-					<Button color={"secondary"} variant="outlined" size="small" href={more}>
+					<Button color={"secondary"} variant="outlined" size="small" href={`#${title}`}>
 						En savoir plus
 					</Button>
 				</CardActions>
