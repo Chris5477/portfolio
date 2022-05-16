@@ -37,13 +37,8 @@ const AboutPage = () => {
 	return (
 		<Box pt={15} pl={3}>
 			<Paper sx={{ width: "70%", height: "auto", p: 4, backgroundColor: "#FFF" }}>
-				<Typography variant="h2">Lorem, ipsum.</Typography>
-				<Typography paragraph>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore ut nesciunt culpa, laborum
-					labore repellat debitis alias. Facere temporibus natus a qui quidem facilis voluptatum inventore excepturi
-					enim illo. Repellat velit a sit quo laboriosam. Ea molestias accusamus ipsa sequi. Voluptas alias in sequi
-					libero
-				</Typography>
+				<Typography mb={2} color={"primary"} fontWeight={400} variant="h2">À propos de moi</Typography>
+				
 				{presentation.map(({ id, title, description }) => (
 					<Accordeon key={id} title={title} description={description} />
 				))}
