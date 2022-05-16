@@ -20,18 +20,20 @@ const TopNavigation = () => {
 		alignItems: "center",
 		fontSize: "1.6em",
 		"& :visited": {
-			color: "primary.main",
+			color: "secondary.light",
 		},
 		"& :hover": {
 			color: "primary.light",
-			transition : "0.4s"
+			transition: "0.4s",
 		},
 	};
 
 	return (
 		<AppBar sx={styleAppBar}>
 			<Avatar alt="Christopher Petitcolas" src={chris} sx={{ width: 50, height: 50, ml: "25px" }} />
-			<Typography variant="h6"  sx={{ flexGrow: 1, ml: 7 }}>Petitcolas Christopher</Typography>
+			<Typography variant="h6" sx={{ flexGrow: 1, ml: 7 }}>
+				Petitcolas Christopher
+			</Typography>
 			<Box sx={{ width: "30%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>

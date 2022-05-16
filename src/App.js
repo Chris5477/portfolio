@@ -13,9 +13,7 @@ function App() {
 				<Routes>
 					<Route exact path="/" element={<Layout page={<HomePage />} />} />
 					<Route path="/portfolio" element={<Layout page={<PortfolioPage />} />} />
-					{/* <Route path="/portfolio/project/:title" element={<Layout page={<PortfolioPage />}/>} /> */}
 					<Route path="/about" element={<Layout page={<AboutPage />} />} />
-
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
