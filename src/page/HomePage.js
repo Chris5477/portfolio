@@ -49,7 +49,7 @@ const HomePage = () => {
 					</Typography>
 
 					<Stack direction="row" spacing={3}>
-						<Button color={"primary"} variant={"contained"} href="/portfolio">
+						<Button color={"primary"} variant={"contained"} href="/myportfolio">
 							Mon Portfolio
 						</Button>
 						<Button color={"primary"} variant={"outlined"} onClick={saveFile}>
