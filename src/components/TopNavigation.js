@@ -34,7 +34,7 @@ const TopNavigation = () => {
 			<Typography variant="h6" sx={{ ml: 1 }} fontSize="2rem">
 				Petitcolas Christopher
 			</Typography>
-			<Box sx={{ width: "60%", height:"50%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+			<Box sx={{ width: "60%", height: "50%", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>
 						{link}

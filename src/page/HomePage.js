@@ -6,11 +6,11 @@ const HomePage = () => {
 	const styleImg = {
 		width: "60%",
 		height: "60%",
-		marginLeft : '20%'
+		marginLeft: "20%",
 	};
 
 	const stylePaperHomePage = {
-		padding : '30px 50px',
+		padding: "30px 50px",
 		border: "2px solid #1e87d1",
 		backgroundColor: "#FFF",
 		color: "primary.light",
@@ -32,13 +32,12 @@ const HomePage = () => {
 			justifyContent="center"
 			alignItems="center"
 			margin="auto"
-			
 		>
 			<Grid item xs={12} md={6}>
 				<img src={chrisPng} alt="christopher" style={styleImg} />
 			</Grid>
 			<Grid item xs={12} md={6}>
-				<Paper sx={stylePaperHomePage} >
+				<Paper sx={stylePaperHomePage}>
 					<Typography color={"primary"} variant="h3">
 						Développeur Front-end <br />
 						(Javascript / React)
@@ -59,13 +58,15 @@ const HomePage = () => {
 					</Stack>
 				</Paper>
 			</Grid>
-			{window.innerWidth > 600 &&  <Typography
-				color="primary"
-				sx={{ width :'100%', position: "absolute", bottom: "1%", textAlign:"center"}}
-				variant="h5"
-			>
-				Cette page web est conçu avec React et MUI Component
-			</Typography>}
+			{window.innerWidth > 600 && (
+				<Typography
+					color="primary"
+					sx={{ width: "100%", position: "absolute", bottom: "1%", textAlign: "center" }}
+					variant="h5"
+				>
+					Cette page web est conçu avec React et MUI Component
+				</Typography>
+			)}
 		</Grid>
 	);
 };
