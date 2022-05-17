@@ -1,7 +1,6 @@
 import { AppBar, Avatar, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import chris from "../assets/pictures/chrispng.png";
-import { theme } from "../utils/theme";
 
 const TopNavigation = () => {
 	const pages = [
