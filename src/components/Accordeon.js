@@ -1,32 +1,22 @@
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Accordeon = ({ title, description }) => {
-	const styleAccordeon = {
-		backgroundColor: "#FFF",
-		color: "primary.main",
-		border: "1px solid #1e87d1",
-	};
+const Accordeon = ({ title, description, expanded}) => {
 
-	const styleAccordeonSummary = {
-		backgroundColor: "primary.main",
-		color: "#FFF",
-	};
 	return (
-		<Accordion sx={styleAccordeon}>
+		<Accordion defaultExpanded={expanded} >
 			<AccordionSummary
-				sx={styleAccordeonSummary}
-				expandIcon={<ExpandMoreIcon sx={{ color: "#FFF" }} />}
+				expandIcon={<ExpandMoreIcon sx={{color : "#FFF"}} />}
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 			>
-				<Typography fontWeight={1000} fontSize={20}>
+				<Typography variant="h4" sx={{color : "#FFF"}}>
 					{title}
 				</Typography>
 			</AccordionSummary>
 
-			<AccordionDetails sx={{ ...styleAccordeon, padding: "15px" }}>
-				<Typography fontWeight={"bold"}>{description}</Typography>
+			<AccordionDetails >
+				<Typography >{description}</Typography>
 			</AccordionDetails>
 		</Accordion>
 	);

@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 
 const SocialLink = ({ icon, title, url, handleClick }) => {
-	const styleLinkButton = {
+	const styleButton = {
 		width: "100%",
 		height: "40px",
 		display: "flex",
@@ -10,7 +10,7 @@ const SocialLink = ({ icon, title, url, handleClick }) => {
 	};
 
 	return (
-		<Button sx={styleLinkButton} variant="contained" color={"primary"} href={url} onClick={handleClick && handleClick}>
+		<Button sx={styleButton} variant="contained" href={url} onClick={handleClick && handleClick}>
 			{icon}
 			{title}
 		</Button>
