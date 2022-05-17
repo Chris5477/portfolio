@@ -4,34 +4,17 @@ import { useState } from "react";
 const Project = ({ id, title, illustrations, article, skillWorked, github }) => {
 	const [index, setIndex] = useState(1);
 	return (
-		<Paper
-			id={title}
-			sx={{ width: "90%", height: "auto", backgroundColor: "#FFF", padding: "20px", margin: "20px auto" }}
-		>
-			<Stack direction="row" justifyContent={"space-between"} alignItems="center" mb={5}>
-				<Typography variant="h3" color="primary">
+		<Paper id={title}>
+			<Stack>
+				<Typography variant="h3">
 					Projet n ° {id} {title}
 				</Typography>
 				<img width={150} src={illustrations[0]} alt="project" />
 			</Stack>
-			<Stack alignItems="center" sx={{ position: "relative" }}>
+			<Stack>
 				<img width={"80%"} height={500} style={{ objectFit: "contain  " }} src={illustrations[index]} alt="project" />
 
-				<Pagination
-					size="large"
-					sx={{
-						display: "inline-flex",
-						position: "absolute",
-						left: "50%",
-						bottom: "2%",
-						transform: "translateX(-50%)",
-						backgroundColor: "secondary.main",
-						borderRadius: "8px",
-					}}
-					count={illustrations.length - 1}
-					onChange={(e, page) => setIndex(page)}
-					color="primary"
-				/>
+				<Pagination size="large" count={illustrations.length - 1} onChange={(e, page) => setIndex(page)} />
 			</Stack>
 			<Stack>
 				<List>
@@ -42,17 +25,13 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 						))}
 					</ListItem>
 				</List>
-				<Typography paragraph color="primary.main" fontWeight={"bolder"} fontSize={18}>
+				<Typography paragraph fontSize={18}>
 					{article}
 				</Typography>
 			</Stack>
-			<Stack direction="row" spacing={3} size="large">
-				<Button color="primary" variant="contained" size="small" href={github}>
-					Voir sur Github
-				</Button>
-				<Button color="primary" variant="contained" size="small" href={`#top`}>
-					Revenir en haut
-				</Button>
+			<Stack>
+				<Button href={github}>Voir sur Github</Button>
+				<Button href={`#top`}>Revenir en haut</Button>
 			</Stack>
 		</Paper>
 	);

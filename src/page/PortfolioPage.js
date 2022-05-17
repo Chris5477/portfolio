@@ -6,11 +6,9 @@ import { projects } from "../utils/listProject";
 const PortFolioPage = () => {
 	return (
 		<Box>
-			<Grid id="top" container width={"100%"} height="auto" spacing={2}>
-				<Grid mt={10} ml={5} item xs={12}>
-					<Typography variant="h3" color={"primary"} fontWeight={500}>
-						Mon portfolio
-					</Typography>
+			<Grid id="top" container spacing={2}>
+				<Grid item mt={10} ml={5} xs={12}>
+					<Typography variant="h1">Mon portfolio</Typography>
 				</Grid>
 				{projects.map(({ id, title, description, illustrations, github }) => (
 					<Grid key={id} item xs={12} md={3}>
@@ -18,7 +16,7 @@ const PortFolioPage = () => {
 					</Grid>
 				))}
 			</Grid>
-			<Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start" }}>
+			<Box>
 				{projects.map(({ id, title, description, illustrations, article, skillWorked, github }) => (
 					<Project
 						key={id}

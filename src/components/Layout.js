@@ -6,7 +6,7 @@ import TopNavigation from "./TopNavigation";
 const Layout = ({ page }) => {
 	return (
 		<ThemeProvider theme={theme}>
-			<Paper sx={{ width: "100%", minHeight: "100vh", height: "auto" }}>
+			<Paper sx={{backgroundColor : theme.palette.background.paper}} >
 				<TopNavigation />
 				{page}
 			</Paper>

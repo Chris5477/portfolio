@@ -5,4 +5,29 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
+	font-size: 1.8rem;
+	margin: 0 50px;
+}
+
+a:hover {
+	color: #63a4ff;
+	transition: 0.3s;
+}
+
+.picture-home {
+	width: 400px;
+	height: 400px;
+}
+@media screen and (max-width: 498px) {
+	a {
+		font-size: 1rem;
+		margin: 0 5px;
+	}
+
+	.picture-home {
+		width: 250px;
+		height: 250px;
+		margin: 20px auto;
+	}
 }

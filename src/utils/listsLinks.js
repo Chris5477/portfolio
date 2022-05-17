@@ -34,7 +34,7 @@ export const listLinks = [
 	{
 		id: 4,
 		icon: <AttachmentIcon sx={{ mr: 3 }} />,
-		title: "Télécharger mon C-V",
+		title: "Télécharger C-V",
 		handleClick: saveFile,
 	},
 	{
