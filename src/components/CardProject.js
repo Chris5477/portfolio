@@ -31,8 +31,10 @@ const CardProject = ({ title, description, picture, link }) => {
 				<Typography pl={2} sx={{ backgroundColor: "primary.light", color: "primary.dark" }} gutterBottom variant="h3">
 					{title}
 				</Typography>
-				<Typography color="primary.light" variant="button" fontSize={16} mt={3} >{description}</Typography>
-				<CardActions sx={{position : "absolute", bottom : "3%"}}>
+				<Typography color="primary.light" variant="button" fontSize={16} mt={3}>
+					{description}
+				</Typography>
+				<CardActions sx={{ position: "absolute", bottom: "3%" }}>
 					<Button color="secondary" variant="outlined" href={link}>
 						Voir sur Github
 					</Button>

@@ -4,7 +4,7 @@ import { useState } from "react";
 const stylePaperPortfolio = {
 	backgroundColor: "#FFF",
 	width: "90%",
-	padding: "20px",
+	padding: "10px",
 	margin: "50px auto",
 };
 
@@ -15,7 +15,7 @@ const styleIllustration = {
 };
 
 const stylePagination = {
-	width: window.innerWidth < 498 ? "80%" : "auto",
+	width: window.innerWidth < 498 ? "70%" : "auto",
 	position: "absolute",
 	bottom: "2%",
 	left: "50%",
@@ -26,10 +26,11 @@ const stylePagination = {
 
 const Project = ({ id, title, illustrations, article, skillWorked, github }) => {
 	const [index, setIndex] = useState(1);
+
 	const media = illustrations[index].match(".webm") ? (
 		<video sx={styleIllustration} controls>
 			{" "}
-			<source src={illustrations[index]} />{" "}
+			<source src={illustrations[index]} />
 		</video>
 	) : (
 		<img sx={styleIllustration} src={illustrations[index]} alt="project" />
@@ -61,9 +62,7 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 						))}
 					</ListItem>
 				</List>
-				<Typography paragraph fontSize={18}>
-					{article}
-				</Typography>
+				<Typography paragraph fontSize={18}>{article}</Typography>
 			</Stack>
 			<Stack direction="row" spacing={2}>
 				<Button variant="contained" color="primary" href={github}>

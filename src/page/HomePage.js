@@ -1,8 +1,8 @@
-import {Box, Paper, Typography, Grid, Button, Stack } from "@mui/material";
+import { Box, Paper, Typography, Grid, Button, Stack } from "@mui/material";
 import chrisPng from "../assets/pictures/chrispng.png";
 import { saveFile } from "../utils/downloadFile";
 
-const styleBoxHomePage = {backGroundColor : "#f3f3f7", height: "100vh", display :"flex" , alignItems:"center"}
+const styleBoxHomePage = { backGroundColor: "#f3f3f7", height: "100vh", display: "flex", alignItems: "center" };
 const styleHomeGrid = {
 	width: "100%",
 	height: "auto",
@@ -15,6 +15,8 @@ const stylePaperHomePage = {
 	padding: "25px 5px 20px 25px",
 	border: "2px solid #1e87d1",
 	borderRadius: "8px",
+	width: "85%",
+	margin: "auto",
 };
 
 const btns =
@@ -23,8 +25,6 @@ const btns =
 		: { size: "small", textOne: "Portfolio", textTwo: "Mon Cv" };
 
 const HomePage = () => {
-
-	
 	return (
 		<Box sx={styleBoxHomePage}>
 			<Grid container sx={styleHomeGrid}>
@@ -44,7 +44,7 @@ const HomePage = () => {
 						</Typography>
 
 						<Stack direction="row" spacing={2}>
-							<Button size={btns.size} variant="contained" color="primary" href="/myportfolio">
+							<Button size={btns.size} variant="contained" color="primary" href="/portfolio/myportfolio">
 								{btns.textOne}
 							</Button>
 							<Button size={btns.size} variant="outlined" color="primary" onClick={saveFile}>
@@ -53,10 +53,6 @@ const HomePage = () => {
 						</Stack>
 					</Paper>
 				</Grid>
-
-				<Typography paragraph sx={{ width: "100%", position: "absolute", bottom: "0%", textAlign: "center" }}>
-					Cette page web est conçu avec React et MUI Component
-				</Typography>
 			</Grid>
 		</Box>
 	);

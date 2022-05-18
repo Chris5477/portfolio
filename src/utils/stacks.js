@@ -7,12 +7,11 @@ import redux from "../assets/icons/redux.svg";
 import jest from "../assets/icons/jest.png";
 import mongo from "../assets/icons/mongo-db.png";
 import figma from "../assets/icons/figma.png";
-import node from "../assets/icons/node.svg"
-import psql from "../assets/icons/psql.svg"
-import git from "../assets/icons/git.svg"
-import typescript from "../assets/icons/typescript.svg"
-import webGl from "../assets/icons/webGl.svg"
-
+import node from "../assets/icons/node.svg";
+import psql from "../assets/icons/psql.svg";
+import git from "../assets/icons/git.svg";
+import typescript from "../assets/icons/typescript.svg";
+import webGl from "../assets/icons/webGl.svg";
 
 export const skills = [
 	{
@@ -45,17 +44,17 @@ export const skills = [
 	},
 ];
 
-export const knowledge =  [
-    {
+export const knowledge = [
+	{
 		id: 1,
 		icon: node,
 	},
 	{
-        id: 2,
+		id: 2,
 		icon: mongo,
 	},
 	{
-        id: 3,
+		id: 3,
 		icon: typescript,
 	},
 	{
@@ -63,15 +62,15 @@ export const knowledge =  [
 		icon: webGl,
 	},
 	{
-        id: 5,
+		id: 5,
 		icon: psql,
 	},
 	{
 		id: 6,
 		icon: git,
 	},
-    {
-        id: 7,
-        icon: figma,
-    },
-]
+	{
+		id: 7,
+		icon: figma,
+	},
+];

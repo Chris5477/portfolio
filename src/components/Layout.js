@@ -20,7 +20,7 @@ import TopNavigation from "./TopNavigation";
 const Layout = ({ page }) => {
 	return (
 		<ThemeProvider theme={theme}>
-			<Paper sx={{backgroundColor : theme.palette.background.paper}} >
+			<Paper sx={{ backgroundColor: theme.palette.background.paper }}>
 				<TopNavigation />
 				{page}
 			</Paper>
