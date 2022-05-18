@@ -3,14 +3,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import AttachmentIcon from "@mui/icons-material/Attachment";
 import LanguageIcon from "@mui/icons-material/Language";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
-import fileSaver from "file-saver";
+import { saveFile } from "../utils/downloadFile";
 
-const saveFile = () => {
-	fileSaver.saveAs(
-		process.env.PUBLIC_URL + "./assets/CV_ChristopherPetitcolas_Alternance_DEVWEB.pdf",
-		"CV _ Christopher Petitcolas_Alternance_DEVWEB	.pdf"
-	);
-};
 
 export const listLinks = [
 	{

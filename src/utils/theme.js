@@ -68,7 +68,7 @@ export const theme = createTheme({
 			dark: "#0a2e47",
 		},
 		background: {
-			paper: "#ebeed3",
+			paper: "#f3f3f7",
 		},
 		secondary: {
 			main: "#75a6c4",
