@@ -35,7 +35,7 @@ const styleAside = {
 };
 
 const styleGridTechno = {
-	backgroundColor: "#e1e1e1",
+	backgroundColor: "#f3f3f7",
 	border: "2px solid #1e87d1",
 	paddingBottom: "20px",
 	borderRadius: "5px",

@@ -1,9 +1,8 @@
 import {Box, Paper, Typography, Grid, Button, Stack } from "@mui/material";
 import chrisPng from "../assets/pictures/chrispng.png";
-import fileSaver from "file-saver";
+import { saveFile } from "../utils/downloadFile";
 
-
-const styleBoxHomePage = {backGroundColor : "#ebeed3", height: "100vh", display :"flex" , alignItems:"center"}
+const styleBoxHomePage = {backGroundColor : "#f3f3f7", height: "100vh", display :"flex" , alignItems:"center"}
 const styleHomeGrid = {
 	width: "100%",
 	height: "auto",
@@ -26,12 +25,8 @@ const btns =
 		: { size: "small", textOne: "Portfolio", textTwo: "Mon Cv" };
 
 const HomePage = () => {
-	const saveFile = () => {
-		fileSaver.saveAs(
-			process.env.PUBLIC_URL + "./assets/CV_ChristopherPetitcolas_Alternance_DEVWEB.pdf",
-			"CV _ Christopher Petitcolas_Alternance_DEVWEB	.pdf"
-		);
-	};
+
+	
 	return (
 		<Box sx={styleBoxHomePage}>
 			<Grid container sx={styleHomeGrid}>
@@ -61,7 +56,7 @@ const HomePage = () => {
 					</Paper>
 				</Grid>
 
-				<Typography sx={{ width: "100%", position: "absolute", bottom: "1%", textAlign: "center" }}>
+				<Typography paragraph sx={{ width: "100%", position: "absolute", bottom: "0%", textAlign: "center" }}>
 					Cette page web est conçu avec React et MUI Component
 				</Typography>
 			</Grid>
