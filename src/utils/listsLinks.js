@@ -5,7 +5,6 @@ import LanguageIcon from "@mui/icons-material/Language";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { saveFile } from "../utils/downloadFile";
 
-
 export const listLinks = [
 	{
 		id: 1,

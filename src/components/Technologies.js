@@ -1,10 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 
 const styleIcon = {
-	width : "40px",
-	height : "40px",
-	objectFit : "cover"
-}
+	width: "40px",
+	height: "40px",
+	objectFit: "cover",
+};
 
 const Technologies = ({ icon }) => {
 	return (

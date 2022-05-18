@@ -3,7 +3,7 @@ export const presentation = [
 		id: 1,
 		title: "Presentation",
 		description: `Je m'appelle Christopher, j'ai 31 ans et je suis jeune diplômé d'une formation de développeur Front-End chez Openclassrooms. J'ai travaillé pendant une dizaine d'année dans la grande distribution sur plusieurs postes. Le manque de perspective d'évolution m'a motivé à m'orienter vers une reconversion professionnelle. J'ai choisi le développement web, car j'ai gardé un très bon souvenir de mon grand frère qui m'a initié au HTML dans mon enfance. J'ai choisi une formation de développeur Front-End pour la satisfaction de pouvoir visualiser le code écrit sur un navigateur. Par curiosité et de pouvoir conserver des données, j'ai décidé d'apprendre Node js et la base de données MongoDB pour parvenir a créer une application complète.`,
-		expanded : true
+		expanded: true,
 	},
 	{
 		id: 2,
@@ -35,9 +35,8 @@ export const presentation = [
 		La cuisine est quelque chose qui me plaît. Si de beau matin, on me dit ce soir, on fait un barbecue ? Ma journée serait géniale quoiqu'il arrive. Cuisiner des choses qu'on aime est géniale, ça développe la créativité ou encore, on peut tenter des mélanges improbables. `,
 	},
 	{
-		id: 7	,
+		id: 7,
 		title: "Mes objectifs",
 		description: `Dans un premier temps, mon premier objectif est d'avoir une première expérience professionnelle réussie en tant que développeur web. Ensuite, j'aimerais pouvoir me former au métier de développeur Full-Stack ou associer mes compétences de développeur au domaine de l'intelligence artificielle. Puis en fin de carrière, j'aimerais utiliser tout ce que m'a offert ma carrière pour créer une entreprise aux États-Unis`,
 	},
-	
 ];

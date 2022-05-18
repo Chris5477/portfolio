@@ -11,18 +11,18 @@ const styleGridAboutPage = {
 	width: "100%",
 	minHeight: "100vh",
 	margin: "70px 0 20px 0",
-	justifyContent : "space-around",
-	alignItems : "center",
+	justifyContent: "space-around",
+	alignItems: "center",
 };
 
 const styleAccordeon = {
-	backgroundColor : "#FFF",
+	backgroundColor: "#FFF",
 	height: "auto",
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "center",
-	padding : "25px 15px",
-	margin :"15px auto"
+	padding: "25px 12px",
+	margin: "15px auto",
 };
 
 const styleAside = {
@@ -31,7 +31,7 @@ const styleAside = {
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "center",
-	margin : "auto",
+	margin: "auto",
 };
 
 const styleGridTechno = {
@@ -39,16 +39,15 @@ const styleGridTechno = {
 	border: "2px solid #1e87d1",
 	paddingBottom: "20px",
 	borderRadius: "5px",
-	margin : "15px auto",
-	width : "80%"
+	margin: "15px auto",
+	width: "80%",
 };
-
 
 const AboutPage = () => {
 	return (
 		<Grid container sx={styleGridAboutPage}>
-			<Grid item mobile={12} tablette={8} >
-				<Paper sx={window.innerWidth > 498 ? {...styleAccordeon, width :"92%"} : { ...styleAccordeon, width: "92%" }}>
+			<Grid item mobile={12} tablette={8}>
+				<Paper sx={window.innerWidth > 498 ? { ...styleAccordeon, width: "92%" } : { ...styleAccordeon, width: "92%" }}>
 					<Typography color={"primary"} variant="h1" width={"95%"} pb={2}>
 						À propos de moi
 					</Typography>
@@ -58,22 +57,20 @@ const AboutPage = () => {
 					))}
 				</Paper>
 			</Grid>
-			<Grid item mobile={12} tablette={3} >
+			<Grid item mobile={12} tablette={3}>
 				<Paper sx={styleAside}>
-					<Typography variant="h4"m="auto" pt={2} pb={2}>
+					<Typography variant="h4" m="auto" pt={2} pb={2}>
 						Mes réseaux sociaux
 					</Typography>
 					<Stack alignItems={"center"} spacing={2}>
 						{listLinks.map(({ id, title, icon, url, handleClick }) => (
-							<SocialLink  key={id} title={title} icon={icon} url={url} handleClick={handleClick} />
+							<SocialLink key={id} title={title} icon={icon} url={url} handleClick={handleClick} />
 						))}
 					</Stack>
 
 					<Grid container spacing={2} sx={styleGridTechno}>
 						<Grid item width={"100%"} mobile={12}>
-							<Typography variant="h5" >
-								Mes compétences
-							</Typography>
+							<Typography variant="h5">Mes compétences</Typography>
 						</Grid>
 						<Divider />
 						{skills.map(({ id, icon }) => (
