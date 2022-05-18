@@ -22,7 +22,7 @@ a:hover {
 @media screen and (max-width: 498px) {
 	a {
 		font-size: 1rem;
-		margin: 0 5px;
+		margin: 0 6px;
 	}
 
 	.picture-home {
