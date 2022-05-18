@@ -11,9 +11,9 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 				<Routes>
-					<Route exact path="/portfolio/" element={<Layout page={<HomePage />} />} />
-					<Route path="/portfolio/myportfolio" element={<Layout page={<PortfolioPage />} />} />
-					<Route path="/portfolio/about" element={<Layout page={<AboutPage />} />} />
+					<Route exact path="portfolio/" element={<Layout page={<HomePage />} />} />
+					<Route path="portfolio/myportfolio" element={<Layout page={<PortfolioPage />} />} />
+					<Route path="portfolio/about" element={<Layout page={<AboutPage />} />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
