@@ -44,7 +44,7 @@ const HomePage = () => {
 						</Typography>
 
 						<Stack direction="row" spacing={2}>
-							<Button size={btns.size} variant="contained" color="primary" href="https://github.com/Chris5477">
+							<Button size={btns.size} variant="contained" color="primary" href="/portfolio/myportfolio">
 								{btns.textOne}
 							</Button>
 							<Button size={btns.size} variant="outlined" color="primary" onClick={saveFile}>
