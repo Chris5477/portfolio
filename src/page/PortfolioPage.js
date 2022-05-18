@@ -9,7 +9,7 @@ const PortFolioPage = () => {
 	return (
 		<Box>
 			<Grid id="top" container spacing={2}>
-				<Grid item mt={10}  ml={5} mobile={12}>
+				<Grid item mt={10} ml={5} mobile={12}>
 					<Typography variant="h1">Mon portfolio</Typography>
 				</Grid>
 				{projects.map(({ id, title, description, illustrations, github }) => (
