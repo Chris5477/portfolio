@@ -19,6 +19,22 @@ a:hover {
 	width: 400px;
 	height: 400px;
 }
+
+@media screen and (min-width : 498px) and (max-width : 998px){
+
+	a {
+		font-size: 1.3rem;
+		margin: 0 6px;
+	}
+
+	.picture-home {
+		width: 300px;
+		height: 300px;
+		margin : auto
+	}
+}
+
+
 @media screen and (max-width: 498px) {
 	a {
 		font-size: 1rem;

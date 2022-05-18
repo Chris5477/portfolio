@@ -8,7 +8,7 @@ const styleIcon = {
 
 const Technologies = ({ icon }) => {
 	return (
-		<Grid item xs={3}>
+		<Grid item mobile={3}>
 			<img style={styleIcon} src={icon} alt="technologie" />
 		</Grid>
 	);

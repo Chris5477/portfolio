@@ -95,7 +95,7 @@ export const theme = createTheme({
 		},
 		h5: {
 			fontWeight: 400,
-			fontSize: window.innerWidth / 100 + 14,
+			fontSize: window.innerWidth / 100 + 10,
 		},
 		body1: {
 			fontWeight: 600,

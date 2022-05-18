@@ -10,13 +10,13 @@ const Accordeon = ({ title, description, expanded}) => {
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 			>
-				<Typography variant="h4" sx={{color : "#FFF"}}>
+				<Typography variant="h4" fontSize={24} sx={{color : "#FFF"}}>
 					{title}
 				</Typography>
 			</AccordionSummary>
 
 			<AccordionDetails >
-				<Typography >{description}</Typography>
+				<Typography fontSize={18}  >{description}</Typography>
 			</AccordionDetails>
 		</Accordion>
 	);

@@ -34,12 +34,12 @@ export const listLinks = [
 	{
 		id: 4,
 		icon: <AttachmentIcon sx={{ mr: 3 }} />,
-		title: "Télécharger C-V",
+		title: "Mon C-V",
 		handleClick: saveFile,
 	},
 	{
 		id: 5,
 		icon: <ContactMailIcon sx={{ mr: 3 }} />,
-		title: "Contactez-moi",
+		title: "Contact",
 	},
 ];
