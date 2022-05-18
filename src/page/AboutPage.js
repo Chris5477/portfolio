@@ -10,18 +10,19 @@ import { knowledge } from "../utils/stacks";
 const styleGridAboutPage = {
 	width: "100%",
 	minHeight: "100vh",
-	height: "auto",
+	marginLeft : "5px"
+
 };
 
 const styleAccordeon = {
 	backgroundColor : "#FFF",
-	width: "70%",
 	height: "auto",
 	marginTop: "110px",
 	marginBottom :"20px",
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "center",
+	padding : "25px 5px"
 };
 
 const styleAside = {
@@ -57,9 +58,9 @@ const styleAsideXS = {
 const AboutPage = () => {
 	return (
 		<Grid container sx={styleGridAboutPage}>
-			<Grid item xs={12} md={8}>
+			<Grid item mobile={12} tablette={8} >
 				<Paper sx={window.innerWidth > 498 ? styleAccordeon : { ...styleAccordeon, width: "95%" }}>
-					<Typography color={"primary"} variant="h1" width={"95%"}>
+					<Typography color={"primary"} variant="h1" width={"95%"} pb={2}>
 						À propos de moi
 					</Typography>
 
@@ -68,9 +69,9 @@ const AboutPage = () => {
 					))}
 				</Paper>
 			</Grid>
-			<Grid item xs={12}>
-				<Paper sx={window.innerWidth > 498 ? styleAside : styleAsideXS}>
-					<Typography variant="h3" mt={2} mb={2}>
+			<Grid item xs={12} >
+				<Paper sx={window.innerWidth > 998 ? styleAside : styleAsideXS}>
+					<Typography variant="h3" pt={2} pb={2}>
 						Mes réseaux sociaux
 					</Typography>
 					<Stack alignItems={"center"} spacing={2}>

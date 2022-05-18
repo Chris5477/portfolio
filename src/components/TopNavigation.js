@@ -12,8 +12,8 @@ const TopNavigation = () => {
 	return (
 		<AppBar>
 			<Stack direction="row" alignItems="center">
-				<Avatar alt="Christopher Petitcolas" src={chris} sx={{mr : 2}} />
-				<Typography color={"white"} variant="h4">Petitcolas Christopher</Typography>
+				<Avatar alt="Christopher Petitcolas" src={chris} sx={{mr : 1}} />
+				<Typography color={"white"} variant="h5">Petitcolas Christopher</Typography>
 			</Stack>
 			<Box mr={6}>
 				{pages.map(({ id, path, link }) => (

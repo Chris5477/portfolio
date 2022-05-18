@@ -2,7 +2,12 @@ import { createTheme } from "@mui/material/styles";
 import { height, padding } from "@mui/system";
 
 export const theme = createTheme({
-	
+	breakpoints: {
+		values: {
+			mobile: 498,
+			tablette: 998,
+		},
+	},
 	components: {
 		MuiAppBar: {
 			styleOverrides: {
@@ -65,33 +70,36 @@ export const theme = createTheme({
 		background: {
 			paper: "#ebeed3",
 		},
-		secondary : {
-		            main : "#75a6c4",
-		            light: "#e2edf3",
-		            dark : "#3d718f"
-		        },
+		secondary: {
+			main: "#75a6c4",
+			light: "#e2edf3",
+			dark: "#3d718f",
+		},
 	},
 	typography: {
 		h1: {
 			fontWeight: 700,
-			fontSize: window.innerWidth / 50 + 12,
-			padding: "20px",
+			fontSize: window.innerWidth / 100 + 24,
 		},
 		h2: {
 			fontWeight: 400,
-			fontSize: window.innerWidth / 80 + 10,
+			fontSize: window.innerWidth / 100 + 20,
 		},
 		h3: {
 			fontWeight: 500,
-			fontSize: window.innerWidth / 100 + 10,
+			fontSize: window.innerWidth / 100 + 18,
 		},
 		h4: {
 			fontWeight: 500,
-			fontSize: window.innerWidth / 150 + 5,
+			fontSize: window.innerWidth / 100 + 16,
+		},
+		h5: {
+			fontWeight: 400,
+			fontSize: window.innerWidth / 100 + 14,
 		},
 		body1: {
 			fontWeight: 600,
-			fontSize: window.innerWidth / 150 + 8,
+			fontSize: window.innerWidth / 100 + 8,
 			padding: "10px",
 		},
 	},

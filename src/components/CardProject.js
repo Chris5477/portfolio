@@ -9,7 +9,7 @@ import { theme } from "../utils/theme";
 
 const CardProject = ({ title, description, picture, link }) => {
 	const styleCard = {
-		width: "380px",
+		width: "90%",
 		margin: 3,
 		minHeight: "400px",
 		position: "relative",
@@ -20,22 +20,25 @@ const CardProject = ({ title, description, picture, link }) => {
 
 	const styleCardMedia = {
 		objectFit: "contain",
-		height: "100",
 		backgroundColor: "#FFF",
 	};
 
 	return (
 		<Card sx={styleCard}>
-			<CardMedia sx={styleCardMedia} component="img" image={picture} alt="project" />
+			<CardMedia sx={styleCardMedia} component="img" height={140} image={picture} alt="project" />
 			<Divider />
 			<CardContent>
 				<Typography pl={2} sx={{ backgroundColor: "primary.light", color: "primary.dark" }} gutterBottom variant="h3">
 					{title}
 				</Typography>
-				<Typography color="primary.light">{description}</Typography>
-				<CardActions>
-					<Button color='secondary' variant="outlined" href={link}>Voir sur Github</Button>
-					<Button color='secondary' variant="outlined"	 href={`#${title}`}>En savoir plus</Button>
+				<Typography color="primary.light" variant="button" fontSize={16} mt={3} >{description}</Typography>
+				<CardActions sx={{position : "absolute", bottom : "3%"}}>
+					<Button color="secondary" variant="outlined" href={link}>
+						Voir sur Github
+					</Button>
+					<Button color="secondary" variant="outlined" href={`#${title}`}>
+						En savoir plus
+					</Button>
 				</CardActions>
 				<Divider />
 			</CardContent>
