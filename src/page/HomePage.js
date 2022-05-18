@@ -15,8 +15,13 @@ const stylePaperHomePage = {
 	padding: "25px 5px 20px 25px",
 	border: "2px solid #1e87d1",
 	borderRadius: "8px",
+<<<<<<< HEAD
 	width: "85%",
 	margin: "auto",
+=======
+	width : '85%',
+	margin :"auto"
+>>>>>>> test 4
 };
 
 const btns =
@@ -28,7 +33,7 @@ const HomePage = () => {
 	return (
 		<Box sx={styleBoxHomePage}>
 			<Grid container sx={styleHomeGrid}>
-				<Grid item mobile={12} tablette={3} mt={8}>
+				<Grid item mobile={6} tablette={3} mt={8}>
 					<img className="picture-home" src={chrisPng} alt="christopher" />
 				</Grid>
 				<Grid item mobile={12} tablette={5} mt={6}>
