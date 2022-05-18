@@ -33,6 +33,7 @@ export const listLinks = [
 	{
 		id: 5,
 		icon: <ContactMailIcon sx={{ mr: 3 }} />,
-		title: "Contactez-moi",
+		title: "Contact",
+		url : 'mailto:petitcolaschristopher@gmail.com'
 	},
 ];

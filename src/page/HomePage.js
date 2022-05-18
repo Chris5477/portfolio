@@ -21,8 +21,8 @@ const stylePaperHomePage = {
 
 const btns =
 	window.innerWidth > 498
-		? { size: "large", textOne: "Mon Github", textTwo: "Github" }
-		: { size: "small", textOne: "Portfolio", textTwo: "Mon Cv" };
+		? { size: "large", textOne: "Mon Github", textTwo: "Télécharger mon Cv" }
+		: { size: "small", textOne: "Github", textTwo: "Mon Cv" };
 
 const HomePage = () => {
 	return (
@@ -44,7 +44,7 @@ const HomePage = () => {
 						</Typography>
 
 						<Stack direction="row" spacing={2}>
-							<Button size={btns.size} variant="contained" color="primary" href="https://github.com/Chris5477">
+							<Button size={btns.size} variant="contained" color="primary" href="/portfolio/myportfolio">
 								{btns.textOne}
 							</Button>
 							<Button size={btns.size} variant="outlined" color="primary" onClick={saveFile}>

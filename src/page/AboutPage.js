@@ -38,10 +38,7 @@ const styleAside = {
 	flexDirection: "column",
 	alignItems: "center",
 	justifyContent: "center",
-<<<<<<< HEAD
-=======
 	margin: "auto",
->>>>>>> 8d7f02d... improve render and add a project
 };
 
 const styleGridTechno = {

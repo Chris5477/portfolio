@@ -15,7 +15,9 @@ const Accordeon = ({ title, description, expanded }) => {
 			</AccordionSummary>
 
 			<AccordionDetails>
-				<Typography fontSize={18}>{description}</Typography>
+				<Typography fontSize={18} textAlign="justify">
+					{description}
+				</Typography>
 			</AccordionDetails>
 		</Accordion>
 	);
