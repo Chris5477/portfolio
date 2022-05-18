@@ -29,7 +29,6 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 
 	const media = illustrations[index].match(".webm") ? (
 		<video sx={styleIllustration} controls>
-			{" "}
 			<source src={illustrations[index]} />
 		</video>
 	) : (
@@ -62,7 +61,9 @@ const Project = ({ id, title, illustrations, article, skillWorked, github }) => 
 						))}
 					</ListItem>
 				</List>
-				<Typography paragraph fontSize={18}>{article}</Typography>
+				<Typography paragraph textAlign="justify" fontSize={18}>
+					{article}
+				</Typography>
 			</Stack>
 			<Stack direction="row" spacing={2}>
 				<Button variant="contained" color="primary" href={github}>

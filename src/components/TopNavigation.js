@@ -17,7 +17,7 @@ const TopNavigation = () => {
 					Petitcolas Christopher
 				</Typography>
 			</Stack>
-			<Box mr={6}>
+			<Box mr={2}>
 				{pages.map(({ id, path, link }) => (
 					<Link key={id} to={path}>
 						{link}

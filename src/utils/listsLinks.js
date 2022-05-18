@@ -34,5 +34,6 @@ export const listLinks = [
 		id: 5,
 		icon: <ContactMailIcon sx={{ mr: 3 }} />,
 		title: "Contact",
+		url : 'mailto:petitcolaschristopher@gmail.com'
 	},
 ];
