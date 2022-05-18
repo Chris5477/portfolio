@@ -15,13 +15,8 @@ const stylePaperHomePage = {
 	padding: "25px 5px 20px 25px",
 	border: "2px solid #1e87d1",
 	borderRadius: "8px",
-<<<<<<< HEAD
 	width: "85%",
 	margin: "auto",
-=======
-	width : '85%',
-	margin :"auto"
->>>>>>> test 4
 };
 
 const btns =
