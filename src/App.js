@@ -9,7 +9,7 @@ import "./app.css";
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter basename="/portfolio">
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Routes>
 					<Route exact path="/" element={<Layout page={<HomePage />} />} />
 					<Route path="/myportfolio" element={<Layout page={<PortfolioPage />} />} />
