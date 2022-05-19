@@ -18,8 +18,6 @@ const styleGridAboutPage = {
 const styleAccordeon = {
 	backgroundColor: "#FFF",
 	height: "auto",
-	marginTop: "110px",
-	marginBottom :"20px",
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "center",
@@ -29,14 +27,9 @@ const styleAccordeon = {
 
 const styleAside = {
 	backgroundColor: "#FFF",
-	width: "300px",
-	height: "auto",
-	position: "fixed",
-	right: "2%",
-	top: "11%",
+	width: "95%",
 	display: "flex",
 	flexDirection: "column",
-	alignItems: "center",
 	justifyContent: "center",
 	margin: "auto",
 };
@@ -86,7 +79,7 @@ const AboutPage = () => {
 					</Grid>
 
 					<Grid container spacing={2} sx={styleGridTechno}>
-						<Grid item xs={12}>
+						<Grid item width={"100%"} mobile={12}>
 							<Typography variant="h5">Mes connaissances</Typography>
 						</Grid>
 						<Divider />
