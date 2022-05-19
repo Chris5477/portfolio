@@ -4,8 +4,6 @@ import Project from "../components/Project";
 import { projects } from "../utils/listProject";
 
 const PortFolioPage = () => {
-	
-
 	return (
 		<Box>
 			<Grid id="top" container spacing={2}>

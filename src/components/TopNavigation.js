@@ -4,9 +4,9 @@ import chris from "../assets/pictures/chrispng.png";
 
 const TopNavigation = () => {
 	const pages = [
-		{ id: 1, path: "/", link: "Home" },
-		{ id: 2, path: "/myportfolio", link: "Portfolio" },
-		{ id: 3, path: "/about", link: "About" },
+		{ id: 1, path: "/portfolio/", link: "Home" },
+		{ id: 2, path: "/portfolio/myportfolio", link: "Portfolio" },
+		{ id: 3, path: "/portfolio/about", link: "About" },
 	];
 
 	return (

@@ -1,61 +1,38 @@
-import { Box, Paper, Typography, Grid, Button, Stack } from "@mui/material";
-import chrisPng from "../assets/pictures/chrispng.png";
-import { saveFile } from "../utils/downloadFile";
+import { Box, Grid, Typography } from "@mui/material";
+import CardProject from "../components/CardProject";
+import Project from "../components/Project";
+import { projects } from "../utils/listProject";
 
-const styleBoxHomePage = { backGroundColor: "#f3f3f7", height: "100vh", display: "flex", alignItems: "center" };
-const styleHomeGrid = {
-	width: "100%",
-	height: "auto",
-	justifyContent: "space-around",
-	alignItems: "center",
-};
+const PortFolioPage = () => {
+	
 
-const stylePaperHomePage = {
-	backgroundColor: "#FFF",
-	padding: "25px 5px 20px 25px",
-	border: "2px solid #1e87d1",
-	borderRadius: "8px",
-	width: "85%",
-	margin: "auto",
-};
-
-const btns =
-	window.innerWidth > 498
-		? { size: "large", textOne: "Mon Github", textTwo: "Télécharger mon Cv" }
-		: { size: "small", textOne: "Github", textTwo: "Mon Cv" };
-
-const HomePage = () => {
 	return (
-		<Box sx={styleBoxHomePage}>
-			<Grid container sx={styleHomeGrid}>
-				<Grid item mobile={6} tablette={3} mt={8}>
-					<img className="picture-home" src={chrisPng} alt="christopher" />
+		<Box>
+			<Grid id="top" container spacing={2}>
+				<Grid item mt={10} ml={5} mobile={12}>
+					<Typography variant="h1">Mon portfolio</Typography>
 				</Grid>
-				<Grid item mobile={12} tablette={5} mt={6}>
-					<Paper sx={stylePaperHomePage}>
-						<Typography variant="h1">
-							Développeur Front-end <br />
-							(Javascript / React)
-						</Typography>
-
-						<Typography variant={"h3"} mt={3} mb={5}>
-							Je suis un développeur Front-End spécialisé React. <br />
-							En apprentissage de Node.js.
-						</Typography>
-
-						<Stack direction="row" spacing={2}>
-							<Button size={btns.size} variant="contained" color="primary" href="https://github.com/Chris5477">
-								{btns.textOne}
-							</Button>
-							<Button size={btns.size} variant="outlined" color="primary" onClick={saveFile}>
-								{btns.textTwo}
-							</Button>
-						</Stack>
-					</Paper>
-				</Grid>
+				{projects.map(({ id, title, description, illustrations, github }) => (
+					<Grid key={id} item mobile={12} tablette={3}>
+						<CardProject picture={illustrations[0]} title={title} description={description} link={github} />
+					</Grid>
+				))}
 			</Grid>
+			<Box>
+				{projects.map(({ id, title, description, illustrations, article, skillWorked, github }) => (
+					<Project
+						key={id}
+						id={id}
+						title={title}
+						description={description}
+						illustrations={illustrations}
+						article={article}
+						skillWorked={skillWorked}
+						github={github}
+					/>
+				))}
+			</Box>
 		</Box>
 	);
 };
-
-export default HomePage;
+export default PortFolioPage;
