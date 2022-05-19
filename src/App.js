@@ -12,15 +12,9 @@ function App() {
 		<div className="App">
 			<BrowserRouter >
 				<Routes>
-<<<<<<< HEAD
 					<Route exact path={"portfolio/"} element={<Layout page={<HomePage />} />} />
 					<Route path={"portfolio/myportfolio"}element={<Layout page={<PortfolioPage />} />} />
 					<Route path={"portfolio/about"} element={<Layout page={<AboutPage />} />} />
-=======
-					<Route exact path="/" element={<Layout page={<HomePage />} />} />
-					<Route path="/myportfolio" element={<Layout page={<PortfolioPage />} />} />
-					<Route path="/about" element={<Layout page={<AboutPage />} />} />
->>>>>>> try fix problem host react app on gh pages
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
