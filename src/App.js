@@ -9,11 +9,11 @@ import "./app.css";
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<BrowserRouter basename="/portfolio">
 				<Routes>
-					<Route exact path="portfolio/" element={<Layout page={<HomePage />} />} />
-					<Route path="portfolio/myportfolio" element={<Layout page={<PortfolioPage />} />} />
-					<Route path="portfolio/about" element={<Layout page={<AboutPage />} />} />
+					<Route exact path="/" element={<Layout page={<HomePage />} />} />
+					<Route path="/myportfolio" element={<Layout page={<PortfolioPage />} />} />
+					<Route path="/about" element={<Layout page={<AboutPage />} />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>
