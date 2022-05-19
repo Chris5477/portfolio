@@ -10,7 +10,11 @@ function App() {
 
 	return (
 		<div className="App">
+<<<<<<< HEAD
 			<BrowserRouter >
+=======
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
+>>>>>>> try fix router
 				<Routes>
 					<Route exact path={"portfolio/"} element={<Layout page={<HomePage />} />} />
 					<Route path={"portfolio/myportfolio"}element={<Layout page={<PortfolioPage />} />} />
