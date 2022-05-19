@@ -2,7 +2,7 @@ import HomePage from "./page/HomePage";
 import PortfolioPage from "./page/PortfolioPage";
 import AboutPage from "./page/AboutPage";
 import ErrorPage from "./page/ErrorPage";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import "./app.css";
 
@@ -17,7 +17,7 @@ function App() {
 					<Route path={"portfolio/about"} element={<Layout page={<AboutPage />} />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
-			</HashRouter>
+			</BrowserRouter>
 		</div>
 	);
 }
