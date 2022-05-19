@@ -22,6 +22,7 @@ const stylePagination = {
 	transform: "translateX(-50%)",
 	backgroundColor: "secondary.main",
 	borderRadius: "8px",
+	opacity : "0.7"
 };
 
 const Project = ({ id, title, illustrations, article, skillWorked, github }) => {
